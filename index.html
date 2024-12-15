@@ -1,0 +1,144 @@
+<!-- Api key = 6dfda693ff704531884192008242611 -->
+<!-- http://api.weatherapi.com/v1/search.json?key=6dfda693ff704531884192008242611&q=lond -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-header">
+    <nav class="navbar navbar-expand-lg p-5 fixed-top">
+      <div class="container">
+        <div class="d-flex">
+          <a class="navbar-brand" href="#"
+            ><img src="images/images1.png" alt="Logo"
+          /></a>
+          <div>
+            <a href="#" class="navbar-brand text-white">Weather</a>
+            <h6 class="text-white-50" style="font-size: 10px !important">
+              tagline goes here
+            </h6>
+          </div>
+        </div>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon text-white bg-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">New</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="position-relative">
+      <div class="container">
+        <form class="find-location position-relative mb-5 mb-lg-5">
+          <input
+            type="text"
+            class="form-control rounded-5 py-3 ps-3 pe-5 mo-bg-dark border-0"
+            placeholder="Find your location..."
+            id="search"
+          />
+          <input
+            type="button"
+            value="Find"
+            class="rounded-5 border-0 position-absolute px-5"
+            id="submit"
+          />
+        </form>
+      </div>
+    </main>
+    <section class="translate-middle-y mt-5 position-relative">
+      <div class="container position-relative">
+        <div id="gallary" class="row"></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <form class="find-location position-relative mb-5">
+              <input
+                type="text"
+                class="form-control rounded-5 py-3 ps-3 pe-5 mo-bg-dark border-0"
+                placeholder="Find your location..."
+                id="search"
+              />
+              <input
+                type="button"
+                value="Find"
+                class="rounded-5 border-0 position-absolute px-5"
+                id="submit"
+              />
+            </form>
+          </div>
+          <div class="col-lg-4">
+            <div class="social-links">
+              <a href="#" class="position-relative"
+                ><i
+                  class="translate-middle position-absolute top-50 start-50 fa-brands fa-facebook-f"
+                ></i
+              ></a>
+              <a href="#" class="position-relative"
+                ><i
+                  class="translate-middle position-absolute top-50 start-50 fa-brands fa-twitter"
+                ></i
+              ></a>
+              <a href="#" class="position-relative"
+                ><i
+                  class="translate-middle position-absolute top-50 start-50 fa-brands fa-google"
+                ></i
+              ></a>
+              <a href="#" class="position-relative"
+                ><i
+                  class="translate-middle position-absolute top-50 start-50 fa-brands fa-pinterest"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <p class="text-white-50">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
